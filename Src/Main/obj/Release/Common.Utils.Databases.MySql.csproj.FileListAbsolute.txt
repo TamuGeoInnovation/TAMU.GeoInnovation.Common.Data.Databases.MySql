@@ -1,0 +1,11 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\License.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\Readme.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\aggregate_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\makevalid_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\projection_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\Register.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\transform_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\SQL Scripts\Unregister.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\build\v1.1\bin\AnyCPU\release\USC.GISResearchLab.Common.Utils.Databases.MySql.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\src\obj\Release\USC.GISResearchLab.Common.Utils.Databases.MySql.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Utils\Databases.MySql\src\obj\Release\Common.Utils.Databases.MySql.csprojResolveAssemblyReference.cache
