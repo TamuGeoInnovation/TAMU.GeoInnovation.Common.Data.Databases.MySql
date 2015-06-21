@@ -1,0 +1,3 @@
+C:\DevSource\Tamu\GeoInnovation\Common.Data.Databases.MySql\build\1.0.0\AnyCPU\release\TAMU.GeoInnovation.Common.Data.Databases.MySql.dll
+C:\DevSource\Tamu\GeoInnovation\Common.Data.Databases.MySql\Src\Main\obj\Release\Common.Data.Databases.MySql.Dev.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\Common.Data.Databases.MySql\Src\Main\obj\Release\TAMU.GeoInnovation.Common.Data.Databases.MySql.dll
