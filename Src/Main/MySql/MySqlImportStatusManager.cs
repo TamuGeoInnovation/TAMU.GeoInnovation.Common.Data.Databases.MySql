@@ -170,7 +170,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
                 sql += ");";
 
 
-                SchemaManager.AddTableToDatabase(tableName, sql);
+                SchemaManager.AddTableToDatabase(tableName, sql, false);
             }
             catch (Exception e)
             {
@@ -227,7 +227,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
                 sql += "PRIMARY KEY  (id)";
                 sql += ");";
 
-                SchemaManager.AddTableToDatabase(tableName, sql);
+                SchemaManager.AddTableToDatabase(tableName, sql, false);
             }
             catch (Exception e)
             {
