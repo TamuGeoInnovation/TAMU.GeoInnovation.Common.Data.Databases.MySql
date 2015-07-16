@@ -146,13 +146,13 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             }
         }
 
-        public override void CreateImportStatusStateTable(string tableName, bool restart)
+        public override void CreateImportStatusStateTable(string tableName, bool restart, bool shouldRemoveStatusTablesFirst)
         {
             try
             {
                 SchemaManager.QueryManager.Connection.Open();
-                
-                if (restart)
+
+                if (restart || shouldRemoveStatusTablesFirst)
                 {
                     SchemaManager.RemoveTableFromDatabase(tableName);
                 }
@@ -203,13 +203,13 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             }
         }
 
-        public override void CreateImportStatusCountyTable(string tableName, bool restart)
+        public override void CreateImportStatusCountyTable(string tableName, bool restart, bool shouldRemoveStatusTablesFirst)
         {
             try
             {
                 SchemaManager.QueryManager.Connection.Open();
 
-                if (restart)
+                if (restart || shouldRemoveStatusTablesFirst)
                 {
                     SchemaManager.RemoveTableFromDatabase(tableName);
                 }
@@ -260,13 +260,13 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             }
         }
 
-        public override void CreateImportStatusFileTable(string tableName, bool restart)
+        public override void CreateImportStatusFileTable(string tableName, bool restart, bool shouldRemoveStatusTablesFirst)
         {
             try
             {
                 SchemaManager.QueryManager.Connection.Open();
 
-                if (restart)
+                if (restart || shouldRemoveStatusTablesFirst)
                 {
                     SchemaManager.RemoveTableFromDatabase(tableName);
                 }
