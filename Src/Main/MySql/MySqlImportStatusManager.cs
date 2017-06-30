@@ -7,7 +7,6 @@ using USC.GISResearchLab.Common.Core.Databases;
 using USC.GISResearchLab.Common.Databases.ImportStatusManagers;
 using USC.GISResearchLab.Common.Databases.QueryManagers;
 using USC.GISResearchLab.Common.Databases.SchemaManagers;
-using USC.GISResearchLab.Common.Databases.StoredProcedures;
 using USC.GISResearchLab.Common.Diagnostics.TraceEvents;
 using USC.GISResearchLab.Common.Utils.Databases;
 
