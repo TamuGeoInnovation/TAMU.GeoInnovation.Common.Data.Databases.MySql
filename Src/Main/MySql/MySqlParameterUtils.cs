@@ -1,10 +1,10 @@
+using MySql.Data.MySqlClient;
 using System;
 using System.Data;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.IO;
 using System.Reflection;
-using MySql.Data.MySqlClient;
 using USC.GISResearchLab.Common.Core.Databases;
 using USC.GISResearchLab.Common.Databases.TypeConverters;
 using USC.GISResearchLab.Common.Databases.TypeConverters.DatabaseTypeConverters;
@@ -45,7 +45,7 @@ namespace USC.GISResearchLab.Common.Utils.Databases
             AbstractDatabaseDataProviderTypeConverterManager typeConverterSqlServer = (AbstractDatabaseDataProviderTypeConverterManager)DatabaseTypeConverterManagerFactory.GetDatabaseTypeConverterManager(pathToDatabaseDlls, DatabaseType.SqlServer);
             AbstractDatabaseDataProviderTypeConverterManager typeConverterMySql = (AbstractDatabaseDataProviderTypeConverterManager)DatabaseTypeConverterManagerFactory.GetDatabaseTypeConverterManager(pathToDatabaseDlls, DatabaseType.MySql);
             DatabaseSuperDataType superType = typeConverterSqlServer.ToSuperType(type);
-            MySqlDbType mysqlType = (MySqlDbType) typeConverterMySql.FromDatabaseSuperDataType(superType);
+            MySqlDbType mysqlType = (MySqlDbType)typeConverterMySql.FromDatabaseSuperDataType(superType);
 
             MySqlParameter ret = new MySqlParameter(name, mysqlType);
             if (value == null || value == DBNull.Value)
@@ -61,7 +61,7 @@ namespace USC.GISResearchLab.Common.Utils.Databases
             return ret;
         }
 
-        
+
         public static SqlParameter BuildSqlUdtParameter(string name, string dbTypeName, object value)
         {
             SqlParameter ret = new SqlParameter(name, SqlDbType.Udt) { UdtTypeName = dbTypeName };

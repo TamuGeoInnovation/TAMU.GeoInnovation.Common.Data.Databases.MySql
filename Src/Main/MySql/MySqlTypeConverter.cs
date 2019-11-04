@@ -1,5 +1,5 @@
-using System;
 using MySql.Data.MySqlClient;
+using System;
 using USC.GISResearchLab.Common.Core.Databases;
 using USC.GISResearchLab.Common.Databases.TypeConverters;
 

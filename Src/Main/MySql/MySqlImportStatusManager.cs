@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using MySql.Data.MySqlClient;
 using USC.GISResearchLab.Common.Core.Databases;
 using USC.GISResearchLab.Common.Databases.ImportStatusManagers;
 using USC.GISResearchLab.Common.Databases.QueryManagers;
@@ -14,7 +14,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
 {
     public class MySqlImportStatusManager : AbstractImportStatusManager
     {
-       
+
 
         //#region Properties
 
@@ -89,7 +89,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
         {
             SchemaManager = SchemaManagerFactory.GetSchemaManager(pathToDatabaseDlls, providerType, connectionString);
         }
-        
+
 
         public override void InitializeConnections()
         {
@@ -455,7 +455,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             return ret;
         }
 
-        
+
 
         public override bool UpdateStatusFile(string tableName, string state, string county, string file, Statuses status, string message)
         {
@@ -487,7 +487,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
 
                 if (id <= 0 || status == Statuses.start)
                 {
-                    InsertStatusFile(tableName, state, county,  file);
+                    InsertStatusFile(tableName, state, county, file);
                 }
                 else
                 {
@@ -525,7 +525,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             return ret;
         }
 
-        
+
 
         public override bool UpdateStatusState(string tableName, string state, Statuses status, string message)
         {
@@ -587,7 +587,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             return ret;
         }
 
-       
+
 
         public override bool UpdateStatusCounty(string tableName, string state, string county, Statuses status, string message)
         {
@@ -614,7 +614,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
                 SchemaManager.QueryManager.AddParameters(cmd.Parameters);
                 int id = SchemaManager.QueryManager.ExecuteScalarInt(CommandType.Text, cmd.CommandText, true);
 
-                
+
 
                 if (id <= 0 || status == Statuses.start)
                 {

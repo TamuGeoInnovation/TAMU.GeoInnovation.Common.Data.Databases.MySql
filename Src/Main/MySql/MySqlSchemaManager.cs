@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using MySql.Data.MySqlClient;
 using USC.GISResearchLab.Common.Core.Databases;
 using USC.GISResearchLab.Common.Core.Utils.Arrays;
 using USC.GISResearchLab.Common.Databases.QueryManagers;
@@ -361,7 +361,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
             try
             {
 
-                MySqlCommand cmd = new MySqlCommand("show create table " + tableName, (MySqlConnection) Connection);
+                MySqlCommand cmd = new MySqlCommand("show create table " + tableName, (MySqlConnection)Connection);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -435,7 +435,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
 
                 string sql = "";
                 sql += " show databases ";
-                
+
                 MySqlCommand cmd = new MySqlCommand(sql);
                 //cmd.Parameters.Add(SqlParameterUtils.BuildSqlParameter("organizationName", SqlDbType.VarChar, organizationName));
                 //cmd.Parameters.Add(SqlParameterUtils.BuildSqlParameter("organizationGuid", SqlDbType.VarChar, organizationGuid));
@@ -558,7 +558,7 @@ namespace USC.GISResearchLab.Common.Databases.MySql
         }
 
         public override void RemoveTableFromDatabase(string tableName)
-        {   
+        {
             try
             {
                 string sql = "drop table if exists " + tableName + ";";

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Data;
+﻿using Microsoft.SqlServer.Types;
 using MySql.Data.MySqlClient;
+using SQLSpatialTools;
+using System;
+using System.Data;
 using USC.GISResearchLab.Common.Core.Databases.BulkCopys;
 using USC.GISResearchLab.Common.Databases.QueryManagers;
-using Microsoft.SqlServer.Types;
 using USC.GISResearchLab.Common.Utils.Databases;
-using SQLSpatialTools;
 
 namespace USC.GISResearchLab.Common.Core.Databases.MySql
 {
